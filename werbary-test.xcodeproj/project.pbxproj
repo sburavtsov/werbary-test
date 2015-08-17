@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38A4D0361B811951000E4B40 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38A4D0351B811951000E4B40 /* LoginView.xib */; };
+		38ACE0AA1B7E73060040CDD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38ACE0A91B7E73060040CDD3 /* main.m */; };
+		38ACE0AD1B7E73060040CDD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38ACE0AC1B7E73060040CDD3 /* AppDelegate.m */; };
+		38ACE0B01B7E73060040CDD3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38ACE0AF1B7E73060040CDD3 /* ViewController.m */; };
+		38ACE0B31B7E73060040CDD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38ACE0B11B7E73060040CDD3 /* Main.storyboard */; };
+		38ACE0B51B7E73060040CDD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38ACE0B41B7E73060040CDD3 /* Images.xcassets */; };
+		38ACE0B81B7E73060040CDD3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38ACE0B61B7E73060040CDD3 /* LaunchScreen.xib */; };
+		38ACE0C41B7E73060040CDD3 /* werbary_testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38ACE0C31B7E73060040CDD3 /* werbary_testTests.m */; };
+		38ACE0D11B808CA10040CDD3 /* OAuth2Provider.m in Sources */ = {isa = PBXBuildFile; fileRef = 38ACE0D01B808CA10040CDD3 /* OAuth2Provider.m */; };
+		38ACE0D81B808DE70040CDD3 /* OAuth2Credentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 38ACE0D71B808DE70040CDD3 /* OAuth2Credentials.m */; };
+		38ACE0DF1B808F620040CDD3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38ACE0DE1B808F620040CDD3 /* LoginViewController.m */; };
+		38C5E8951B81D46A000F7EC3 /* InstagramDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C5E8941B81D46A000F7EC3 /* InstagramDataProvider.m */; };
+		6EF6449A638DFF6AE5BE5367 /* libPods-werbary-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D7A654D5E9E27ED13A6FEE0 /* libPods-werbary-test.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38ACE0BE1B7E73060040CDD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38ACE09C1B7E73060040CDD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38ACE0A31B7E73060040CDD3;
+			remoteInfo = "werbary-test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		38A4D0351B811951000E4B40 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginView.xib; path = views/LoginViewController/LoginView.xib; sourceTree = "<group>"; };
+		38ACE0A41B7E73060040CDD3 /* werbary-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "werbary-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38ACE0A81B7E73060040CDD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38ACE0A91B7E73060040CDD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		38ACE0AB1B7E73060040CDD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		38ACE0AC1B7E73060040CDD3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		38ACE0AE1B7E73060040CDD3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		38ACE0AF1B7E73060040CDD3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		38ACE0B21B7E73060040CDD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		38ACE0B41B7E73060040CDD3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		38ACE0B71B7E73060040CDD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		38ACE0BD1B7E73060040CDD3 /* werbary-testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "werbary-testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38ACE0C21B7E73060040CDD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38ACE0C31B7E73060040CDD3 /* werbary_testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = werbary_testTests.m; sourceTree = "<group>"; };
+		38ACE0CF1B808CA10040CDD3 /* OAuth2Provider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAuth2Provider.h; path = models/OAuth2Provider/OAuth2Provider.h; sourceTree = "<group>"; };
+		38ACE0D01B808CA10040CDD3 /* OAuth2Provider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAuth2Provider.m; path = models/OAuth2Provider/OAuth2Provider.m; sourceTree = "<group>"; };
+		38ACE0D61B808DE70040CDD3 /* OAuth2Credentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAuth2Credentials.h; path = models/OAuth2Credentials/OAuth2Credentials.h; sourceTree = "<group>"; };
+		38ACE0D71B808DE70040CDD3 /* OAuth2Credentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAuth2Credentials.m; path = models/OAuth2Credentials/OAuth2Credentials.m; sourceTree = "<group>"; };
+		38ACE0DD1B808F620040CDD3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = views/LoginViewController/LoginViewController.h; sourceTree = "<group>"; };
+		38ACE0DE1B808F620040CDD3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = views/LoginViewController/LoginViewController.m; sourceTree = "<group>"; };
+		38C5E8931B81D46A000F7EC3 /* InstagramDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstagramDataProvider.h; path = models/InstagramDataProvider/InstagramDataProvider.h; sourceTree = "<group>"; };
+		38C5E8941B81D46A000F7EC3 /* InstagramDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InstagramDataProvider.m; path = models/InstagramDataProvider/InstagramDataProvider.m; sourceTree = "<group>"; };
+		3DE650385861AAB720720E53 /* Pods-werbary-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-werbary-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-werbary-test/Pods-werbary-test.release.xcconfig"; sourceTree = "<group>"; };
+		5D7A654D5E9E27ED13A6FEE0 /* libPods-werbary-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-werbary-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		850CBE2A701E77E819F36061 /* Pods-werbary-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-werbary-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-werbary-test/Pods-werbary-test.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38ACE0A11B7E73060040CDD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EF6449A638DFF6AE5BE5367 /* libPods-werbary-test.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38ACE0BA1B7E73060040CDD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38ACE09B1B7E73060040CDD3 = {
+			isa = PBXGroup;
+			children = (
+				38ACE0A61B7E73060040CDD3 /* werbary-test */,
+				38ACE0C01B7E73060040CDD3 /* werbary-testTests */,
+				38ACE0A51B7E73060040CDD3 /* Products */,
+				4490700160150B1F235BC4B0 /* Pods */,
+				F7B6FB883DB6B9E9B91B7825 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		38ACE0A51B7E73060040CDD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38ACE0A41B7E73060040CDD3 /* werbary-test.app */,
+				38ACE0BD1B7E73060040CDD3 /* werbary-testTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38ACE0A61B7E73060040CDD3 /* werbary-test */ = {
+			isa = PBXGroup;
+			children = (
+				38ACE0D91B808F1E0040CDD3 /* views */,
+				38ACE0CD1B808C080040CDD3 /* models */,
+				38ACE0AB1B7E73060040CDD3 /* AppDelegate.h */,
+				38ACE0AC1B7E73060040CDD3 /* AppDelegate.m */,
+				38ACE0AE1B7E73060040CDD3 /* ViewController.h */,
+				38ACE0AF1B7E73060040CDD3 /* ViewController.m */,
+				38ACE0B11B7E73060040CDD3 /* Main.storyboard */,
+				38ACE0B41B7E73060040CDD3 /* Images.xcassets */,
+				38ACE0B61B7E73060040CDD3 /* LaunchScreen.xib */,
+				38ACE0A71B7E73060040CDD3 /* Supporting Files */,
+			);
+			path = "werbary-test";
+			sourceTree = "<group>";
+		};
+		38ACE0A71B7E73060040CDD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38ACE0A81B7E73060040CDD3 /* Info.plist */,
+				38ACE0A91B7E73060040CDD3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38ACE0C01B7E73060040CDD3 /* werbary-testTests */ = {
+			isa = PBXGroup;
+			children = (
+				38ACE0C31B7E73060040CDD3 /* werbary_testTests.m */,
+				38ACE0C11B7E73060040CDD3 /* Supporting Files */,
+			);
+			path = "werbary-testTests";
+			sourceTree = "<group>";
+		};
+		38ACE0C11B7E73060040CDD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38ACE0C21B7E73060040CDD3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38ACE0CD1B808C080040CDD3 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				38C5E8921B81D440000F7EC3 /* InstagramDataProvider */,
+				38ACE0D21B808DB00040CDD3 /* OAuth2Credentials */,
+				38ACE0CE1B808C240040CDD3 /* OAuth2Provider */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		38ACE0CE1B808C240040CDD3 /* OAuth2Provider */ = {
+			isa = PBXGroup;
+			children = (
+				38ACE0CF1B808CA10040CDD3 /* OAuth2Provider.h */,
+				38ACE0D01B808CA10040CDD3 /* OAuth2Provider.m */,
+			);
+			name = OAuth2Provider;
+			sourceTree = "<group>";
+		};
+		38ACE0D21B808DB00040CDD3 /* OAuth2Credentials */ = {
+			isa = PBXGroup;
+			children = (
+				38ACE0D61B808DE70040CDD3 /* OAuth2Credentials.h */,
+				38ACE0D71B808DE70040CDD3 /* OAuth2Credentials.m */,
+			);
+			name = OAuth2Credentials;
+			sourceTree = "<group>";
+		};
+		38ACE0D91B808F1E0040CDD3 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				38ACE0DA1B808F250040CDD3 /* LoginViewController */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		38ACE0DA1B808F250040CDD3 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				38ACE0DD1B808F620040CDD3 /* LoginViewController.h */,
+				38ACE0DE1B808F620040CDD3 /* LoginViewController.m */,
+				38A4D0351B811951000E4B40 /* LoginView.xib */,
+			);
+			name = LoginViewController;
+			sourceTree = "<group>";
+		};
+		38C5E8921B81D440000F7EC3 /* InstagramDataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				38C5E8931B81D46A000F7EC3 /* InstagramDataProvider.h */,
+				38C5E8941B81D46A000F7EC3 /* InstagramDataProvider.m */,
+			);
+			name = InstagramDataProvider;
+			sourceTree = "<group>";
+		};
+		4490700160150B1F235BC4B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				850CBE2A701E77E819F36061 /* Pods-werbary-test.debug.xcconfig */,
+				3DE650385861AAB720720E53 /* Pods-werbary-test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F7B6FB883DB6B9E9B91B7825 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D7A654D5E9E27ED13A6FEE0 /* libPods-werbary-test.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38ACE0A31B7E73060040CDD3 /* werbary-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38ACE0C71B7E73060040CDD3 /* Build configuration list for PBXNativeTarget "werbary-test" */;
+			buildPhases = (
+				4AE4F262F28EFA786E48D006 /* Check Pods Manifest.lock */,
+				38ACE0A01B7E73060040CDD3 /* Sources */,
+				38ACE0A11B7E73060040CDD3 /* Frameworks */,
+				38ACE0A21B7E73060040CDD3 /* Resources */,
+				1F8A48A431F8B2BC71E54E2D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "werbary-test";
+			productName = "werbary-test";
+			productReference = 38ACE0A41B7E73060040CDD3 /* werbary-test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		38ACE0BC1B7E73060040CDD3 /* werbary-testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38ACE0CA1B7E73060040CDD3 /* Build configuration list for PBXNativeTarget "werbary-testTests" */;
+			buildPhases = (
+				38ACE0B91B7E73060040CDD3 /* Sources */,
+				38ACE0BA1B7E73060040CDD3 /* Frameworks */,
+				38ACE0BB1B7E73060040CDD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38ACE0BF1B7E73060040CDD3 /* PBXTargetDependency */,
+			);
+			name = "werbary-testTests";
+			productName = "werbary-testTests";
+			productReference = 38ACE0BD1B7E73060040CDD3 /* werbary-testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38ACE09C1B7E73060040CDD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Sergey Buravtsov";
+				TargetAttributes = {
+					38ACE0A31B7E73060040CDD3 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					38ACE0BC1B7E73060040CDD3 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 38ACE0A31B7E73060040CDD3;
+					};
+				};
+			};
+			buildConfigurationList = 38ACE09F1B7E73060040CDD3 /* Build configuration list for PBXProject "werbary-test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38ACE09B1B7E73060040CDD3;
+			productRefGroup = 38ACE0A51B7E73060040CDD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38ACE0A31B7E73060040CDD3 /* werbary-test */,
+				38ACE0BC1B7E73060040CDD3 /* werbary-testTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38ACE0A21B7E73060040CDD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38A4D0361B811951000E4B40 /* LoginView.xib in Resources */,
+				38ACE0B31B7E73060040CDD3 /* Main.storyboard in Resources */,
+				38ACE0B81B7E73060040CDD3 /* LaunchScreen.xib in Resources */,
+				38ACE0B51B7E73060040CDD3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38ACE0BB1B7E73060040CDD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F8A48A431F8B2BC71E54E2D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-werbary-test/Pods-werbary-test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AE4F262F28EFA786E48D006 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38ACE0A01B7E73060040CDD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38ACE0B01B7E73060040CDD3 /* ViewController.m in Sources */,
+				38ACE0D11B808CA10040CDD3 /* OAuth2Provider.m in Sources */,
+				38ACE0DF1B808F620040CDD3 /* LoginViewController.m in Sources */,
+				38ACE0AD1B7E73060040CDD3 /* AppDelegate.m in Sources */,
+				38ACE0AA1B7E73060040CDD3 /* main.m in Sources */,
+				38ACE0D81B808DE70040CDD3 /* OAuth2Credentials.m in Sources */,
+				38C5E8951B81D46A000F7EC3 /* InstagramDataProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38ACE0B91B7E73060040CDD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38ACE0C41B7E73060040CDD3 /* werbary_testTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38ACE0BF1B7E73060040CDD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38ACE0A31B7E73060040CDD3 /* werbary-test */;
+			targetProxy = 38ACE0BE1B7E73060040CDD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		38ACE0B11B7E73060040CDD3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38ACE0B21B7E73060040CDD3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		38ACE0B61B7E73060040CDD3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38ACE0B71B7E73060040CDD3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		38ACE0C51B7E73060040CDD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		38ACE0C61B7E73060040CDD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38ACE0C81B7E73060040CDD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 850CBE2A701E77E819F36061 /* Pods-werbary-test.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "werbary-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		38ACE0C91B7E73060040CDD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DE650385861AAB720720E53 /* Pods-werbary-test.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "werbary-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		38ACE0CB1B7E73060040CDD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "werbary-testTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/werbary-test.app/werbary-test";
+			};
+			name = Debug;
+		};
+		38ACE0CC1B7E73060040CDD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "werbary-testTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/werbary-test.app/werbary-test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38ACE09F1B7E73060040CDD3 /* Build configuration list for PBXProject "werbary-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38ACE0C51B7E73060040CDD3 /* Debug */,
+				38ACE0C61B7E73060040CDD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38ACE0C71B7E73060040CDD3 /* Build configuration list for PBXNativeTarget "werbary-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38ACE0C81B7E73060040CDD3 /* Debug */,
+				38ACE0C91B7E73060040CDD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38ACE0CA1B7E73060040CDD3 /* Build configuration list for PBXNativeTarget "werbary-testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38ACE0CB1B7E73060040CDD3 /* Debug */,
+				38ACE0CC1B7E73060040CDD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38ACE09C1B7E73060040CDD3 /* Project object */;
+}

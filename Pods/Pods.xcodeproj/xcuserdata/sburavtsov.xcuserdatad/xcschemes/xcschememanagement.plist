@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-werbary-test.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UIActivityIndicator-for-SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>iOS-OAuth2Authorization.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>85BA6B0014BF17EC92D72FDD4712AE31</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A26150DA57EE5E584DF0D83C86D2CE13</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B4F38D56833D7E6260AB196A8EAD1875</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D81C61F194E60A76205E68D71349E781</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC511E28905FE2C20E23DA0E564D2673</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

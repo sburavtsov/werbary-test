@@ -15,8 +15,6 @@
 @property (strong, nonatomic) NSNumber *userMediaCount;
 @end
 
-static const NSInteger kSkipAmount = 20;
-
 @implementation InstagramDataProvider
 
 -(void)obtainMediaCount {
@@ -43,11 +41,7 @@ static const NSInteger kSkipAmount = 20;
 
 -(void)obtainPhotosDataInternal {
 
-    
-    for (NSInteger skipCount = 0; skipCount < self.userMediaCount.integerValue; skipCount += kSkipAmount) {
-
-        [self obtainPhotosData:kSkipAmount andSkip:skipCount];
-    }
+    [self obtainPhotosData:@"" ];
 }
 
 -(void)obtainPhotosData {
@@ -56,11 +50,11 @@ static const NSInteger kSkipAmount = 20;
     [self obtainMediaCount];
 }
 
--(void)obtainPhotosData:(NSInteger) count andSkip:(NSInteger)skip {
+-(void)obtainPhotosData:(NSString *)nextMaxID {
     
     NSDictionary *params = @{@"access_token":self.accessToken,
-                             @"count":@(count),
-                             @"min_id":@(skip)};
+                             @"count":self.userMediaCount,
+                             @"max_id":nextMaxID};
     
     [[AFHTTPRequestOperationManager manager] GET:@"https://api.instagram.com/v1/users/self/media/recent/"
                                       parameters:params
@@ -69,6 +63,7 @@ static const NSInteger kSkipAmount = 20;
          NSDictionary *responseDictionary = responseObject;
          
          NSNumber *retCode = responseDictionary[@"meta"][@"code"];
+        
          if (200 == retCode.integerValue) {
              
              NSArray *mediaData = responseDictionary[@"data"];
@@ -84,13 +79,17 @@ static const NSInteger kSkipAmount = 20;
                                                   @"comments_number":commentsNumber}];
                  }
              }
-             
-             if (mediaData.count < kSkipAmount) {
-                 
-                 if ([self.delegate respondsToSelector:@selector(instagramDataProvider:didLoadPhotosData:)]) {
 
-                     [self.delegate instagramDataProvider:self didLoadPhotosData:self.imagesData];
-                 }
+             NSDictionary *paginationData = responseDictionary[@"pagination"];
+             
+             if (paginationData[@"next_max_id"]) {
+
+                 [self obtainPhotosData:paginationData[@"next_max_id"]];
+             }
+                 
+             if ([self.delegate respondsToSelector:@selector(instagramDataProvider:didLoadPhotosData:)]) {
+                 
+                 [self.delegate instagramDataProvider:self didLoadPhotosData:self.imagesData];
              }
          }
      } failure:^(AFHTTPRequestOperation *operation, NSError *error) {

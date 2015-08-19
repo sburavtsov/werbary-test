@@ -17,7 +17,7 @@
 @interface ViewController () <InstagramDataProviderDelegate>
 
 @property (strong, nonatomic) InstagramDataProvider *instagramDataProvider;
-@property (strong, nonatomic) NSArray *photosData;
+@property (strong, atomic) NSArray *photosData;
 @property (assign) NSInteger currentMediaIndex;
 @property (weak, nonatomic) IBOutlet UIImageView *userMedia;
 @property (weak, nonatomic) IBOutlet UILabel *commentsNumber;
@@ -79,6 +79,8 @@
 -(void)obtainPhotosData {
     
     self.currentMediaIndex = NSNotFound;
+    
+    [self updateView];
     
     [self.instagramDataProvider setDelegate:self];
     

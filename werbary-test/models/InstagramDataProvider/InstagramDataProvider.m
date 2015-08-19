@@ -41,7 +41,7 @@
 
 -(void)obtainPhotosDataInternal {
 
-    [self obtainPhotosData:@"" ];
+    [self obtainPhotosData:nil ];
 }
 
 -(void)obtainPhotosData {
@@ -50,13 +50,18 @@
     [self obtainMediaCount];
 }
 
--(void)obtainPhotosData:(NSString *)nextMaxID {
+-(void)obtainPhotosData:(NSString *)urlString {
+
+    NSDictionary *params = nil;
+    NSString *requestURL = urlString;
     
-    NSDictionary *params = @{@"access_token":self.accessToken,
-                             @"count":self.userMediaCount,
-                             @"max_id":nextMaxID};
+    if (! requestURL) {
+
+        params = @{@"access_token":self.accessToken};
+        requestURL = @"https://api.instagram.com/v1/users/self/media/recent/";
+    }
     
-    [[AFHTTPRequestOperationManager manager] GET:@"https://api.instagram.com/v1/users/self/media/recent/"
+    [[AFHTTPRequestOperationManager manager] GET:requestURL
                                       parameters:params
                                          success:^(AFHTTPRequestOperation *operation, id responseObject) {
          
@@ -82,9 +87,9 @@
 
              NSDictionary *paginationData = responseDictionary[@"pagination"];
              
-             if (paginationData[@"next_max_id"]) {
+             if (paginationData[@"next_url"]) {
 
-                 [self obtainPhotosData:paginationData[@"next_max_id"]];
+                 [self obtainPhotosData:paginationData[@"next_url"]];
              }
                  
              if ([self.delegate respondsToSelector:@selector(instagramDataProvider:didLoadPhotosData:)]) {
